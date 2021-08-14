@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="header">
+                <p>tips Calculator</p>
+            </div>
+            <p>How Much U Price?</p>
+            <div class="data first-data">
+                <label for="price">$:</label>
+                <input type="number" placeholder="Enter Price" id="price">
+            </div>
+            <p>How Was U Service?</p>
+
+            <div class="data second-data">
+
+                <select name="service" id="duration">
+        <option value="option">--Choose an Option--</option>
+        <option value="Outstanding">Outstanding</option>
+        <option value="Good">Good</option>
+        <option value="It Was Ok">It Was Ok</option>
+        <option value="Bad">Bad</option>
+        <option value="Tirrible">Tirrible</option>
+    </select>
+            </div>
+            <p>How Many People?</p>
+
+            <div class="data third-data">
+
+                <input type="number" placeholder="Many Of People" id="pepole"><span>People</span>
+            </div>
+            <button onclick="calcTips()">CALCULATE!!</button>
+            <div class="result">
+
+                <span id="span"></span>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
